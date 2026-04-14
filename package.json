@@ -1,0 +1,22 @@
+{
+  "name": "agi-blog-e2e",
+  "version": "1.0.0",
+  "description": "Automação de testes E2E para o Blog do Agi - Playwright + BDD + TypeScript",
+  "engines": {
+    "node": ">=24"
+  },
+  "scripts": {
+    "test": "bddgen && playwright test",
+    "test:headed": "bddgen && playwright test --headed",
+    "test:chromium": "bddgen && playwright test --project=chromium",
+    "test:firefox": "bddgen && playwright test --project=firefox",
+    "test:report": "playwright show-report",
+    "bddgen": "bddgen"
+  },
+  "devDependencies": {
+    "@playwright/test": "^1.51.0",
+    "@types/node": "^25.6.0",
+    "playwright-bdd": "^8.2.1",
+    "typescript": "^5.7.0"
+  }
+}
